@@ -1,4 +1,4 @@
-# [プロジェクト名]
+# AI Voice Chat
 
 ## 最初に必ず読むファイル
 - 仕様・技術スタック: docs/SPEC.md
@@ -24,12 +24,15 @@
 - .env の内容をコードにハードコード
 
 ## 基本コマンド
-※ docs/SPEC.md のスタックに応じてプロジェクト開始時に書き換えること。
 ```bash
-npm test          # テスト実行
-npm run build     # ビルド
-npm run typecheck # 型チェック（TypeScript の場合）
-npm run lint      # リント
+pnpm dev               # 開発サーバー起動
+pnpm test              # 全テスト実行
+pnpm test:unit         # ユニットテストのみ
+pnpm test:integration  # 統合テストのみ
+pnpm test:coverage     # カバレッジレポート
+pnpm build             # ビルド
+pnpm typecheck         # 型チェック
+pnpm lint              # リント
 ```
 
 ## 詳細ルール
